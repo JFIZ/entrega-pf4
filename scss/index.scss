@@ -1,0 +1,21 @@
+//==External import
+
+//Font
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@100;200;400;500;600&family=Prata&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
+
+//==Internal import
+
+//Globals & Variables
+@import "./globals";
+@import "./var";
+@import "./mixing";
+
+//Partials
+@import "./partials/header";
+@import "./partials/footer";
+
+//CUSTOM
+@import "./custom";
+
+//INDEX-PAGE 
+@import "./pages/index-page";

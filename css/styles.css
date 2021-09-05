@@ -1,0 +1,291 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@100;200;400;500;600&family=Prata&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap");
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+*, *::before, *::after {
+  box-sizing: inherit; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+header {
+  position: fixed;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 0px 30px -1px rgba(0, 0, 0, 0.05);
+  margin: 0;
+  opacity: 0.8;
+  z-index: 3; }
+  header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem; }
+    header nav a img {
+      height: 5rem; }
+    header nav ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0; }
+      header nav ul li a {
+        font-family: "maven pro";
+        font-size: 1.8em;
+        color: #8CB858;
+        padding: 1rem;
+        transition: 400ms ease; }
+      header nav ul li a:hover {
+        color: #715E95; }
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #6C6C6C;
+  padding: 2rem; }
+  footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center; }
+    footer div h4 {
+      font-family: 'maven pro';
+      color: #E4E4E4;
+      font-size: 1.6em;
+      font-weight: 100;
+      text-transform: uppercase;
+      margin: 10px; }
+    footer div p {
+      font-family: 'maven pro';
+      color: #E4E4E4;
+      font-size: 1.2em;
+      margin: 0;
+      text-align: center; }
+    footer div ul {
+      padding: 0;
+      margin: 0; }
+      footer div ul li {
+        text-align: left; }
+        footer div ul li a {
+          font-family: 'maven pro';
+          color: #E4E4E4;
+          font-size: 1.2em;
+          font-weight: 100;
+          transition: 400ms ease; }
+        footer div ul li a:hover {
+          color: #8CB858; }
+
+.logoProtolab {
+  width: 140px;
+  margin-top: 4rem;
+  margin-right: 2rem; }
+
+.logo_sm {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-arround;
+  align-items: center; }
+  .logo_sm li a img {
+    background-color: #6C6C6C;
+    padding: 0.8rem; }
+
+.footer_copyRight {
+  background-color: #fff; }
+  .footer_copyRight p {
+    font-family: 'spectral';
+    color: #2B2B2B;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 0; }
+
+/* ESTILO DE TEXTOS */
+.decoBg-1 {
+  z-index: 0;
+  position: absolute;
+  left: 0px;
+  top: -220px; }
+
+.decoBg-2 {
+  z-index: 0;
+  position: absolute; }
+
+.decoBg-3 {
+  z-index: 0;
+  position: absolute;
+  right: 20px;
+  top: 1800px; }
+
+.bgTitles {
+  font-family: 'Prata';
+  font-size: 7.2em;
+  text-transform: uppercase;
+  color: #E4E4E4;
+  z-index: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px; }
+
+.titleOfText {
+  font-family: 'maven pro';
+  font-size: 2.8em;
+  color: #2B2B2B;
+  z-index: 2;
+  position: absolute;
+  top: 38px;
+  left: 234px; }
+
+.decoText {
+  position: absolute;
+  left: 60px;
+  top: 100px; }
+
+.textStyles {
+  font-family: 'spectral';
+  font-size: 1.6em;
+  width: 450px;
+  height: 550px;
+  position: absolute;
+  left: 160px;
+  top: 85px; }
+
+#indexMain {
+  /* SECCIÓN UNO (INTRO) */
+  /* SECCIÓN DOS (CRANEOPLASTIA) */
+  /* SECCIÓN TRES (PRODUCTOS) */
+  /* CAROUSEL BOOSTRAP */
+  /* SECCION CUATRO (PRENSA) */
+  /* CARD BOOSTRAP */ }
+  #indexMain .indexSectionOne {
+    position: relative;
+    height: 100vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    #indexMain .indexSectionOne__texto {
+      position: absolute;
+      left: 2rem;
+      top: 10rem;
+      z-index: 1; }
+      #indexMain .indexSectionOne__texto h2 {
+        font-family: 'Prata';
+        font-size: 7.2em;
+        color: #6C6C6C;
+        padding-bottom: 2rem;
+        z-index: 1; }
+      #indexMain .indexSectionOne__texto h1 {
+        font-family: 'maven pro';
+        font-size: 2.8em;
+        color: #2B2B2B;
+        z-index: 0; }
+      #indexMain .indexSectionOne__texto ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 1rem;
+        gap: 4rem;
+        z-index: 1; }
+    #indexMain .indexSectionOne__img img {
+      position: absolute;
+      right: 2rem;
+      bottom: 1rem;
+      z-index: 0;
+      width: 600px; }
+  #indexMain .indexSectionTwo {
+    height: 100vh;
+    margin-top: 15%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: none;
+    align-items: flex-start; }
+    #indexMain .indexSectionTwo__text {
+      position: relative;
+      width: 60%; }
+  #indexMain .indexSectionThree {
+    height: 100vh;
+    margin-top: 15%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: space-around;
+    gap: 25rem; }
+    #indexMain .indexSectionThree__text {
+      position: relative;
+      width: 50%; }
+  #indexMain .carouselCustom {
+    width: 700px;
+    height: 420px;
+    margin: auto;
+    background-color: #E4E4E4; }
+    #indexMain .carouselCustom__clip div img {
+      clip-path: polygon(0 0, 33% 0, 61% 100%, 0 100%, 0% 50%);
+      width: 700px;
+      height: 420px; }
+    #indexMain .carouselCustom__clip__text {
+      display: flex; }
+    #indexMain .carouselCustom__clip .carousel-item h3 {
+      color: #2B2B2B;
+      font-family: 'maven pro'; }
+    #indexMain .carouselCustom__clip .carousel-item p {
+      color: #2B2B2B;
+      font-family: 'spectral';
+      font-size: 1.6em; }
+    #indexMain .carouselCustom__clip .carousel-item .d-md-inline {
+      text-align: right;
+      padding: 1rem;
+      gap: 1rem;
+      height: 400px;
+      margin-right: -90px;
+      margin-left: 250px; }
+  #indexMain .indexSectionFour {
+    height: 100vh;
+    margin-top: 10%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    gap: 10rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: none; }
+    #indexMain .indexSectionFour__text {
+      position: relative; }
+  #indexMain .card-group {
+    align-self: center;
+    gap: 3rem; }
+    #indexMain .card-group .card {
+      max-width: 290px;
+      height: 360px;
+      border: none;
+      box-shadow: 0px 3px 12px 0px #ebebeb; }
+    #indexMain .card-group .card-title {
+      color: #8CB858;
+      font-family: 'maven pro';
+      font-size: 1.6em;
+      transition: 400ms ease; }
+    #indexMain .card-group .card-title:hover {
+      color: #715E95; }
+    #indexMain .card-group .card-text {
+      font-family: 'spectral';
+      font-size: 1.2em;
+      padding: 1rem; }

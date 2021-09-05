@@ -1,0 +1,36 @@
+//Header 
+
+header {
+        position: fixed;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.8);
+        box-shadow: 0px 0px 30px -1px rgba(0, 0, 0, 0.05);
+        margin: 0;
+        opacity: 0.8;
+        z-index: 3;
+    nav {
+        @include flex(row, space-between, center);
+        margin: 0.5rem;
+        a {
+            img {
+                height: 5rem;
+            }
+        }
+        ul {
+            @include flex(row, space-between, center);
+            margin: 0;
+            li {
+                a {
+                    font-family: "maven pro"; 
+                    font-size: $text-medium;
+                    color: $primary;
+                    padding: 1rem; 
+                    transition: 400ms ease;
+                }
+                a:hover {
+                    color: $secondary;
+                }
+            }
+        }
+    }
+}
