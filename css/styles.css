@@ -115,7 +115,8 @@ footer {
   z-index: 0;
   position: absolute;
   left: 0px;
-  top: -220px; }
+  top: -220px;
+  max-width: 90vw; }
 
 .decoBg-2 {
   z-index: 0;
