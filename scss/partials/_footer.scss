@@ -2,8 +2,10 @@ footer {
     @include flex(row, space-between, flex-start);
     background-color: $grey;
     padding: 2rem;
+    z-index: 3;
     div { 
         @include flex(column, start, center);
+        z-index: 3;
         h4 {
             font-family: 'maven pro';
             color: $white;
@@ -65,5 +67,58 @@ footer {
         font-size: $text-xsmall;
         text-align: center;
         margin: 0;
+        z-index: 3;
     }
+}
+
+/* RESPONSIVE TABLET */
+@media screen and (max-width: 768px) {
+    .logoProtolab {
+        width: 100px;
+        margin-top: 2rem;
+        margin-right: 0;
+    }
+    footer { 
+        @include flex(row, space-between, flex-start);
+        background-color: $grey;
+        padding: 2rem;
+        z-index: 3;
+        div { 
+            @include flex(column, start, center);
+            z-index: 3;
+            h4 {
+                font-family: 'maven pro';
+                color: $white;
+                font-size: $text-small;
+                font-weight: 100;
+                text-transform: uppercase;
+                margin: 10px;
+            }
+            p {
+                font-family: 'maven pro';
+                color: $white;
+                font-size: $text-xsmall;
+                margin: 0;
+                text-align: center;
+            }
+            ul {
+                padding: 0;
+                margin: 0;
+                li {
+                    text-align: left; 
+                    a {
+                        font-family: 'maven pro';
+                        color: $white;
+                        font-size: 1.6em;
+                        font-weight: 100;
+                        transition: 400ms ease;
+                    }
+                    a:hover {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+
 }

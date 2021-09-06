@@ -1,0 +1,36 @@
+.bodyNotFound {
+    background: none !important ;
+    justify-content: center;
+    align-items: center;
+    &__svg {
+        max-width: 420px;
+        margin: auto;
+        padding: 2rem;
+    }
+    &__text {
+        font-family: 'maven pro';
+        text-align: center;
+        font-size: 4rem;
+
+    }
+}
+
+.botonNuevo {
+    display: flex;
+    flex-direction: column;
+    font-family: 'maven pro';
+    font-size: 1.8rem;
+    background-color: $primary ;
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+    bottom: 20px;
+    color: $white;
+}
+
+.botonNuevo:hover {
+    background-color: $secondary ;
+    color: $white;
+}
+
+

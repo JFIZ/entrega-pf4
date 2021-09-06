@@ -33,20 +33,42 @@ header {
     margin: 0.5rem; }
     header nav a img {
       height: 5rem; }
-    header nav ul {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      margin: 0; }
-      header nav ul li a {
-        font-family: "maven pro";
-        font-size: 1.8em;
-        color: #8CB858;
-        padding: 1rem;
-        transition: 400ms ease; }
-      header nav ul li a:hover {
-        color: #715E95; }
+
+.navbar {
+  margin: 0;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding: 0.8rem;
+  justify-content: space-between; }
+
+.navbar-collapse {
+  justify-content: flex-end !important; }
+
+.ulCustom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0; }
+  .ulCustom li a {
+    font-family: "maven pro";
+    font-size: 1.8rem;
+    color: #8CB858 !important;
+    transition: 400ms ease; }
+  .ulCustom li a:hover {
+    color: #715E95 !important; }
+
+/* RESPONSIVE TABLET */
+@media screen and (max-width: 768px) {
+  .ulCustom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; } }
 
 footer {
   display: flex;
@@ -54,12 +76,14 @@ footer {
   justify-content: space-between;
   align-items: flex-start;
   background-color: #6C6C6C;
-  padding: 2rem; }
+  padding: 2rem;
+  z-index: 3; }
   footer div {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: center; }
+    align-items: center;
+    z-index: 3; }
     footer div h4 {
       font-family: 'maven pro';
       color: #E4E4E4;
@@ -108,7 +132,55 @@ footer {
     color: #2B2B2B;
     font-size: 1.2em;
     text-align: center;
-    margin: 0; }
+    margin: 0;
+    z-index: 3; }
+
+/* RESPONSIVE TABLET */
+@media screen and (max-width: 768px) {
+  .logoProtolab {
+    width: 100px;
+    margin-top: 2rem;
+    margin-right: 0; }
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #6C6C6C;
+    padding: 2rem;
+    z-index: 3; }
+    footer div {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      z-index: 3; }
+      footer div h4 {
+        font-family: 'maven pro';
+        color: #E4E4E4;
+        font-size: 1.6em;
+        font-weight: 100;
+        text-transform: uppercase;
+        margin: 10px; }
+      footer div p {
+        font-family: 'maven pro';
+        color: #E4E4E4;
+        font-size: 1.2em;
+        margin: 0;
+        text-align: center; }
+      footer div ul {
+        padding: 0;
+        margin: 0; }
+        footer div ul li {
+          text-align: left; }
+          footer div ul li a {
+            font-family: 'maven pro';
+            color: #E4E4E4;
+            font-size: 1.6em;
+            font-weight: 100;
+            transition: 400ms ease; }
+          footer div ul li a:hover {
+            color: #8CB858; } }
 
 /* ESTILO DE TEXTOS */
 .decoBg-1 {
@@ -161,13 +233,47 @@ footer {
   left: 160px;
   top: 85px; }
 
+/* RESPONSIVE TABLET */
+@media screen and (max-width: 768px) {
+  .bgTitles {
+    font-family: 'Prata';
+    font-size: 5.5em;
+    text-transform: uppercase;
+    color: #E4E4E4;
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px; }
+  .titleOfText {
+    margin: -7rem;
+    font-size: 2rem;
+    top: 107px; }
+  .decoText {
+    position: absolute;
+    left: 0px;
+    top: 100px; }
+  .textStyles {
+    font-family: 'spectral';
+    font-size: 1.2em;
+    width: 420px;
+    height: 420px;
+    position: absolute;
+    left: 55px;
+    top: 85px; }
+  .decoBg-3 {
+    z-index: 0;
+    position: absolute;
+    right: 20px;
+    top: 1400px; } }
+
 #indexMain {
   /* SECCIÓN UNO (INTRO) */
   /* SECCIÓN DOS (CRANEOPLASTIA) */
   /* SECCIÓN TRES (PRODUCTOS) */
   /* CAROUSEL BOOSTRAP */
   /* SECCION CUATRO (PRENSA) */
-  /* CARD BOOSTRAP */ }
+  /* CARD BOOSTRAP */
+  /* RESPONSIVE TABLET */ }
   #indexMain .indexSectionOne {
     position: relative;
     height: 100vh;
@@ -290,3 +396,72 @@ footer {
       font-family: 'spectral';
       font-size: 1.2em;
       padding: 1rem; }
+  @media screen and (max-width: 768px) {
+    #indexMain {
+      /* SECCIÓN UNO (INTRO) */
+      /* SECCIÓN DOS (CRANEOPLASTIA) */
+      /* SECCIÓN TRES (PRODUCTOS) */ }
+      #indexMain .indexSectionOne {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        #indexMain .indexSectionOne__texto {
+          top: 8rem; }
+          #indexMain .indexSectionOne__texto h2 {
+            font-size: 5.8rem; }
+          #indexMain .indexSectionOne__texto h1 {
+            font-size: 2em; }
+        #indexMain .indexSectionOne__img img {
+          width: 450px; }
+      #indexMain .indexSectionTwo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start; }
+        #indexMain .indexSectionTwo__img img {
+          align-content: center;
+          width: 250px; }
+      #indexMain .indexSectionThree {
+        height: 100vh;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        position: relative;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: space-around;
+        gap: 15rem; }
+        #indexMain .indexSectionThree__text {
+          position: relative;
+          width: 50%; } }
+
+.bodyNotFound {
+  background: none !important;
+  justify-content: center;
+  align-items: center; }
+  .bodyNotFound__svg {
+    max-width: 420px;
+    margin: auto;
+    padding: 2rem; }
+  .bodyNotFound__text {
+    font-family: 'maven pro';
+    text-align: center;
+    font-size: 4rem; }
+
+.botonNuevo {
+  display: flex;
+  flex-direction: column;
+  font-family: 'maven pro';
+  font-size: 1.8rem;
+  background-color: #8CB858;
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  bottom: 20px;
+  color: #E4E4E4; }
+
+.botonNuevo:hover {
+  background-color: #715E95;
+  color: #E4E4E4; }

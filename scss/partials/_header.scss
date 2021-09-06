@@ -16,21 +16,45 @@ header {
                 height: 5rem;
             }
         }
-        ul {
-            @include flex(row, space-between, center);
-            margin: 0;
-            li {
-                a {
-                    font-family: "maven pro"; 
-                    font-size: $text-medium;
-                    color: $primary;
-                    padding: 1rem; 
-                    transition: 400ms ease;
-                }
-                a:hover {
-                    color: $secondary;
-                }
-            }
+    }
+}
+
+.navbar {
+    margin: 0;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding: 0.8rem;
+    justify-content: space-between;
+}
+
+.navbar-collapse {
+    justify-content: flex-end !important;
+}
+
+
+.ulCustom {
+    @include flex(row, space-between, center);
+    margin: 0;
+    li {
+        a {
+            font-family: "maven pro"; 
+            font-size: 1.8rem;
+            color: $primary !important;
+            transition: 400ms ease;  
         }
+        a:hover {
+            color: $secondary !important;
+        }
+    }
+}
+
+/* RESPONSIVE TABLET */
+@media screen and (max-width: 768px){
+.ulCustom {
+    @include flex(column, space-between, center);
     }
 }

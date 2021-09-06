@@ -10,8 +10,10 @@
 @import "./var";
 @import "./mixing";
 
-//Partials
+//HEADER
 @import "./partials/header";
+
+//FOOTER
 @import "./partials/footer";
 
 //CUSTOM
@@ -19,3 +21,6 @@
 
 //INDEX-PAGE 
 @import "./pages/index-page";
+
+// PAGE404
+@import "./pages/page404";

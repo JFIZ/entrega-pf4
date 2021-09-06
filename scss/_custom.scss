@@ -1,5 +1,4 @@
 /* ESTILO DE TEXTOS */
-
 .decoBg-1 {
     z-index: 0;
     position: absolute;
@@ -7,19 +6,16 @@
     top: -220px;
     max-width: 90vw;
 }
-
 .decoBg-2 {
     z-index: 0;
     position: absolute;
 }
-
 .decoBg-3 {
     z-index: 0;
     position: absolute;
     right: 20px;
     top: 1800px;
 }
-
 .bgTitles {
     font-family: 'Prata';
     font-size: 7.2em;
@@ -30,7 +26,6 @@
     top: 0px;
     left: 0px;
 }
-
 .titleOfText {
     font-family: 'maven pro';
     font-size: 2.8em;
@@ -40,13 +35,11 @@
     top: 38px;
     left: 234px;
 }
-
 .decoText {
     position: absolute;
     left: 60px;
     top: 100px;
 }
-
 .textStyles { 
     font-family: 'spectral';
     font-size: 1.6em;
@@ -55,4 +48,46 @@
     position: absolute;
     left: 160px;
     top: 85px;
+}
+
+/* RESPONSIVE TABLET */
+@media screen and (max-width: 768px) {
+
+    .bgTitles {
+        font-family: 'Prata';
+        font-size: 5.5em;
+        text-transform: uppercase;
+        color: $white;
+        z-index: 1;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+
+    .titleOfText {
+        margin: -7rem;
+        font-size: 2rem;
+        top: 107px;
+    }
+
+    .decoText {
+        position: absolute;
+        left: 0px;
+        top: 100px;
+    }
+    .textStyles { 
+        font-family: 'spectral';
+        font-size: 1.2em;
+        width: 420px;
+        height: 420px;
+        position: absolute;
+        left: 55px;
+        top: 85px;
+    }
+    .decoBg-3 {
+        z-index: 0;
+        position: absolute;
+        right: 20px;
+        top: 1400px;
+    }
 }
