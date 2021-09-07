@@ -1,0 +1,17 @@
+#pacienteMain {
+    height: 150vh;
+    display: felx;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .pacienteSectionOne {
+        @include flex(row, space-between, center);
+    }
+    .imgPaciente {
+        img {
+            max-width: 500px;
+        }
+        
+    }
+}

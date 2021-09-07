@@ -1,4 +1,6 @@
 #indexMain {
+    max-width: 1220px;
+    margin: auto;
 /* SECCIÓN UNO (INTRO) */    
     .indexSectionOne {  
         position: relative;
@@ -34,7 +36,7 @@
             img {
                 position: absolute;
                 right: 2rem;
-                bottom: 1rem;
+                bottom: 10em;
                 z-index: 0;
                 width: 600px;
             }
