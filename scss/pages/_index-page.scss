@@ -147,11 +147,17 @@
             padding: 1rem;
         }
     }
+
+/* =================================================================== */
+}
 /* RESPONSIVE TABLET */
-@media screen and (max-width: 768px){
-    /* SECCIÓN UNO (INTRO) */    
+@media only screen and (max-width: 768px){
+    /* SECCIÓN UNO (INTRO) */  
+#indexMain { 
+    margin: auto;
     .indexSectionOne {  
         @include flex(column, center, center);
+        height: 70vh;
         &__texto {
             top: 8rem;
             h2 {
@@ -163,13 +169,14 @@
         }
         &__img {
             img {
-                width: 450px;
+                width: 500px;
             }
         }
     }
     /* SECCIÓN DOS (CRANEOPLASTIA) */
     .indexSectionTwo {
         @include flex(row, space-between, flex-start);
+        height: 60vh;
             &__img {
                img {
                    align-content: center;
@@ -177,21 +184,130 @@
                }
             }
     }
+    .carouselCustom {
+        margin: 3rem auto;
+    }
     /* SECCIÓN TRES (PRODUCTOS) */
     .indexSectionThree {
-        height: 100vh;
+        height: 60vh;
         padding-left: 2rem;
         padding-right: 2rem;
         position: relative;
         margin: 0;
-        @include flex(column, flex-start, space-around);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-around;
         gap: 15rem;
         &__text {
             position: relative;
             width: 50%;
         }
     }
+    /* SECCION CUATRO (PRENSA) */
+    .indexSectionFour {
+        height: 60vh;
+    }
 }
+} 
+
+/* RESPONSIVE SMARTPHONE */
+@media only screen and (max-width: 360px){
+    /* SECCIÓN UNO (INTRO) */  
+#indexMain { 
+    margin: auto;
+    max-width: 360px;
+    .indexSectionOne {  
+        @include flex(column, center, center);
+        height: 100vh;
+        &__texto {
+            top: 8rem;
+            h2 {
+                font-size: 5.8rem;
+            }
+            h1 {
+                font-size: 2em;
+            }
+        }
+        &__img {
+            img {
+                right: -150px;
+                bottom: 200px;
+                width: 500px;
+            }
+        }
+    }
+    /* SECCIÓN DOS (CRANEOPLASTIA) */
+    .indexSectionTwo {
+        @include flex(column, center, center);
+        height: 100vh;
+            &__img {
+               img {
+                   align-content: center;
+                   width: 400px;
+               }
+            }
+    }
+    .carouselCustom {
+        display: none;
+        margin: 3rem auto;
+    }
+    /* SECCIÓN TRES (PRODUCTOS) */
+    .indexSectionThree {
+        display: none;
+        height: 60vh;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        position: relative;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-around;
+        gap: 15rem;
+        &__text {
+            position: relative;
+            width: 50%;
+        }
+    }
+    /* SECCION CUATRO (PRENSA) */
+    .indexSectionFour {
+        height: 100vh;
+        margin-top: 10%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        gap: 10rem  ;
+        position: relative;
+        @include flex(column, space-around, none);
+        &__text {
+            position: relative;
+        }
+    }
+/* CARD BOOSTRAP */
+    .card-group { 
+        align-self: center;
+        gap: 3rem;
+        .card {
+            max-width: 290px;
+            height: 360px;
+            border: none;
+            box-shadow: 0px 3px 12px 0px rgba(235, 235, 235, 1);
+        }
+        .card-title {
+            color: $primary;
+            font-family: 'maven pro';
+            font-size: 1.6em;
+            transition: 400ms ease;
+        }   
+        .card-title:hover {
+            color: $secondary;
+            
+        }
+        .card-text {
+            font-family: 'spectral';
+            font-size: 1.2em;
+            padding: 1rem;
+        }
+    }
 }
-
-
+} 

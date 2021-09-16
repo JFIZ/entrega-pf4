@@ -122,3 +122,81 @@ footer {
     }
 
 }
+
+/* RESPONSIVE SMARTPHONE */
+@media screen and (max-width: 360px){
+    footer { 
+        @include flex(column, center, center);
+        background-color: $grey;
+        padding: 2rem;
+        z-index: 3;
+        div { 
+            @include flex(column, start, center);
+            z-index: 3;
+            h4 {
+                font-family: 'maven pro';
+                color: $primary;
+                font-size: $text-medium;
+                font-weight: 100;
+                text-transform: uppercase;
+                margin: 10px;
+            }
+            p {
+                font-family: 'maven pro';
+                color: $white;
+                font-size: $text-small;
+                margin: 0;
+                text-align: center;
+            }
+            ul {
+                padding: 0;
+                margin: 0;
+                li {
+                    text-align: center; 
+                    a {
+                        font-family: 'maven pro';
+                        color: $white;
+                        font-size: $text-small;
+                        font-weight: 100;
+                        transition: 400ms ease;
+                    }
+                    a:hover {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+    
+    .logoProtolab {
+        width: 140px;
+        margin-top: 4rem;
+        margin-right: 2rem;
+    }
+    
+    .logo_sm { 
+        @include flex(row, space-arround, center);
+        li {
+            a {
+                img {
+                    background-color: $grey;
+                    padding: 0.8rem;
+                }
+            }
+        }
+    }
+    
+    .footer_copyRight { 
+        background-color: #fff;
+        p {
+            font-family: 'spectral';
+            color: $black;
+            font-size: $text-xsmall;
+            text-align: center;
+            margin: 0;
+            z-index: 3;
+        }
+    }
+    
+
+}

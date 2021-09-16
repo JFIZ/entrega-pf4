@@ -182,6 +182,70 @@ footer {
           footer div ul li a:hover {
             color: #8CB858; } }
 
+/* RESPONSIVE SMARTPHONE */
+@media screen and (max-width: 360px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #6C6C6C;
+    padding: 2rem;
+    z-index: 3; }
+    footer div {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      z-index: 3; }
+      footer div h4 {
+        font-family: 'maven pro';
+        color: #8CB858;
+        font-size: 1.8em;
+        font-weight: 100;
+        text-transform: uppercase;
+        margin: 10px; }
+      footer div p {
+        font-family: 'maven pro';
+        color: #E4E4E4;
+        font-size: 1.6em;
+        margin: 0;
+        text-align: center; }
+      footer div ul {
+        padding: 0;
+        margin: 0; }
+        footer div ul li {
+          text-align: center; }
+          footer div ul li a {
+            font-family: 'maven pro';
+            color: #E4E4E4;
+            font-size: 1.6em;
+            font-weight: 100;
+            transition: 400ms ease; }
+          footer div ul li a:hover {
+            color: #8CB858; }
+  .logoProtolab {
+    width: 140px;
+    margin-top: 4rem;
+    margin-right: 2rem; }
+  .logo_sm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-arround;
+    align-items: center; }
+    .logo_sm li a img {
+      background-color: #6C6C6C;
+      padding: 0.8rem; }
+  .footer_copyRight {
+    background-color: #fff; }
+    .footer_copyRight p {
+      font-family: 'spectral';
+      color: #2B2B2B;
+      font-size: 1.2em;
+      text-align: center;
+      margin: 0;
+      z-index: 3; } }
+
 /* ESTILO DE TEXTOS */
 .decoBg-1 {
   z-index: 0;
@@ -198,7 +262,15 @@ footer {
   z-index: 0;
   position: absolute;
   right: 90px;
-  top: 1800px; }
+  top: 1800px;
+  opacity: 0.4; }
+
+.decoBg-4 {
+  z-index: 0;
+  position: absolute;
+  right: 40px;
+  top: 100vh;
+  opacity: 0.6; }
 
 .bgTitles {
   font-family: 'Prata';
@@ -275,7 +347,7 @@ footer {
   /* CAROUSEL BOOSTRAP */
   /* SECCION CUATRO (PRENSA) */
   /* CARD BOOSTRAP */
-  /* RESPONSIVE TABLET */ }
+  /* =================================================================== */ }
   #indexMain .indexSectionOne {
     position: relative;
     height: 100vh;
@@ -398,60 +470,250 @@ footer {
       font-family: 'spectral';
       font-size: 1.2em;
       padding: 1rem; }
-  @media screen and (max-width: 768px) {
-    #indexMain {
-      /* SECCIÓN UNO (INTRO) */
-      /* SECCIÓN DOS (CRANEOPLASTIA) */
-      /* SECCIÓN TRES (PRODUCTOS) */ }
-      #indexMain .indexSectionOne {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; }
-        #indexMain .indexSectionOne__texto {
-          top: 8rem; }
-          #indexMain .indexSectionOne__texto h2 {
-            font-size: 5.8rem; }
-          #indexMain .indexSectionOne__texto h1 {
-            font-size: 2em; }
-        #indexMain .indexSectionOne__img img {
-          width: 450px; }
-      #indexMain .indexSectionTwo {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start; }
-        #indexMain .indexSectionTwo__img img {
-          align-content: center;
-          width: 250px; }
-      #indexMain .indexSectionThree {
-        height: 100vh;
-        padding-left: 2rem;
-        padding-right: 2rem;
+
+/* RESPONSIVE TABLET */
+@media only screen and (max-width: 768px) {
+  /* SECCIÓN UNO (INTRO) */
+  #indexMain {
+    margin: auto;
+    /* SECCIÓN DOS (CRANEOPLASTIA) */
+    /* SECCIÓN TRES (PRODUCTOS) */
+    /* SECCION CUATRO (PRENSA) */ }
+    #indexMain .indexSectionOne {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 70vh; }
+      #indexMain .indexSectionOne__texto {
+        top: 8rem; }
+        #indexMain .indexSectionOne__texto h2 {
+          font-size: 5.8rem; }
+        #indexMain .indexSectionOne__texto h1 {
+          font-size: 2em; }
+      #indexMain .indexSectionOne__img img {
+        width: 500px; }
+    #indexMain .indexSectionTwo {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      height: 60vh; }
+      #indexMain .indexSectionTwo__img img {
+        align-content: center;
+        width: 250px; }
+    #indexMain .carouselCustom {
+      margin: 3rem auto; }
+    #indexMain .indexSectionThree {
+      height: 60vh;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      position: relative;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: space-around;
+      gap: 15rem; }
+      #indexMain .indexSectionThree__text {
         position: relative;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: space-around;
-        gap: 15rem; }
-        #indexMain .indexSectionThree__text {
-          position: relative;
-          width: 50%; } }
+        width: 50%; }
+    #indexMain .indexSectionFour {
+      height: 60vh; } }
+
+/* RESPONSIVE SMARTPHONE */
+@media only screen and (max-width: 360px) {
+  /* SECCIÓN UNO (INTRO) */
+  #indexMain {
+    margin: auto;
+    max-width: 360px;
+    /* SECCIÓN DOS (CRANEOPLASTIA) */
+    /* SECCIÓN TRES (PRODUCTOS) */
+    /* SECCION CUATRO (PRENSA) */
+    /* CARD BOOSTRAP */ }
+    #indexMain .indexSectionOne {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; }
+      #indexMain .indexSectionOne__texto {
+        top: 8rem; }
+        #indexMain .indexSectionOne__texto h2 {
+          font-size: 5.8rem; }
+        #indexMain .indexSectionOne__texto h1 {
+          font-size: 2em; }
+      #indexMain .indexSectionOne__img img {
+        right: -150px;
+        bottom: 200px;
+        width: 500px; }
+    #indexMain .indexSectionTwo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; }
+      #indexMain .indexSectionTwo__img img {
+        align-content: center;
+        width: 400px; }
+    #indexMain .carouselCustom {
+      display: none;
+      margin: 3rem auto; }
+    #indexMain .indexSectionThree {
+      display: none;
+      height: 60vh;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      position: relative;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: space-around;
+      gap: 15rem; }
+      #indexMain .indexSectionThree__text {
+        position: relative;
+        width: 50%; }
+    #indexMain .indexSectionFour {
+      height: 100vh;
+      margin-top: 10%;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      gap: 10rem;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: none; }
+      #indexMain .indexSectionFour__text {
+        position: relative; }
+    #indexMain .card-group {
+      align-self: center;
+      gap: 3rem; }
+      #indexMain .card-group .card {
+        max-width: 290px;
+        height: 360px;
+        border: none;
+        box-shadow: 0px 3px 12px 0px #ebebeb; }
+      #indexMain .card-group .card-title {
+        color: #8CB858;
+        font-family: 'maven pro';
+        font-size: 1.6em;
+        transition: 400ms ease; }
+      #indexMain .card-group .card-title:hover {
+        color: #715E95; }
+      #indexMain .card-group .card-text {
+        font-family: 'spectral';
+        font-size: 1.2em;
+        padding: 1rem; } }
 
 #pacienteMain {
-  height: 150vh;
-  display: felx;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center; }
-  #pacienteMain .pacienteSectionOne  {
+  max-width: 1220px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 1rem;
+  position: relative; }
+  #pacienteMain .pacienteSectionOne {
+    z-index: 1;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center; }
-  #pacienteMain .imgPaciente img {
-    max-width: 500px; }
+    align-items: flex-start;
+    margin-top: 15%;
+    width: 100%;
+    height: 80vh;
+    gap: 7rem; }
+    #pacienteMain .pacienteSectionOne .bgHands {
+      opacity: 0.3;
+      position: absolute;
+      left: 50px; }
+    #pacienteMain .pacienteSectionOne__text {
+      width: 50%;
+      position: relative; }
+    #pacienteMain .pacienteSectionOne__img {
+      width: 50%; }
+      #pacienteMain .pacienteSectionOne__img img {
+        width: 54rem;
+        box-shadow: 2px 9px 28px -6px rgba(0, 0, 0, 0.31); }
+  #pacienteMain .pacienteSectionTwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    gap: 2rem; }
+    #pacienteMain .pacienteSectionTwo__text {
+      width: 100%;
+      position: relative; }
+    #pacienteMain .pacienteSectionTwo__img {
+      display: grid;
+      grid-template-columns: 25% 25% 25% 25%;
+      gap: 1rem; }
+      #pacienteMain .pacienteSectionTwo__img img {
+        width: 28rem;
+        margin-bottom: 0px;
+        max-width: 280px; }
+      #pacienteMain .pacienteSectionTwo__img h4 {
+        font-family: 'maven pro';
+        font-size: 1.8em;
+        color: #2B2B2B; }
+      #pacienteMain .pacienteSectionTwo__img p {
+        font-family: 'spectral';
+        font-size: 1.6em;
+        color: #6C6C6C; }
+  #pacienteMain .pacienteSectionThree .btnContacto {
+    border: none;
+    border-radius: 50px;
+    background-color: #715E95;
+    padding: 2rem;
+    transition: 400ms ease;
+    font-family: 'maven pro';
+    font-size: 1.6em;
+    color: #E4E4E4; }
+  #pacienteMain .pacienteSectionThree .btnContacto:hover {
+    border: none;
+    border-radius: 10px;
+    background-color: #8CB858; }
+
+/* RESPONSIVE TABLET */
+@media screen and (max-width: 768px) {
+  #pacienteMain {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 1rem;
+    position: relative; }
+    #pacienteMain .pacienteSectionOne {
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 6%;
+      width: 100%;
+      height: 55vh;
+      flex-wrap: wrap; }
+      #pacienteMain .pacienteSectionOne__text {
+        width: 80%; }
+      #pacienteMain .pacienteSectionOne__img {
+        width: 65%; }
+    #pacienteMain .decoBg-4 {
+      display: none; }
+    #pacienteMain .pacienteSectionTwo__img {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      gap: 1rem;
+      justify-content: space-around;
+      align-items: start;
+      justify-items: center; } }
 
 .bodyNotFound {
   background: none !important;

@@ -1,17 +1,126 @@
 #pacienteMain {
-    height: 150vh;
-    display: felx;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    .pacienteSectionOne {
-        @include flex(row, space-between, center);
-    }
-    .imgPaciente {
-        img {
-            max-width: 500px;
+    max-width: 1220px;
+    margin: auto;
+    @include flex(column, center, center);
+    padding: 2rem;
+    gap: 1rem;
+    position: relative;
+    .pacienteSectionOne {
+        z-index: 1;
+        @include flex(row, space-between, flex-start);
+        margin-top: 15%;
+        width: 100%;
+        height: 80vh;
+        gap: 7rem;
+        .bgHands {
+            opacity: 0.3;
+            position: absolute;
+            left: 50px;
         }
-        
+        &__text {
+            width: 50%;
+            position: relative;
+        }
+        &__img {
+            width: 50%;
+            img {
+                width: 54rem;
+                box-shadow: 2px 9px 28px -6px rgba(0, 0, 0, 0.31);
+            }
+            
+        }
     }
+    .pacienteSectionTwo {
+        @include flex(column, space-around, center);
+        height: 100vh;
+        width: 100%;
+        gap: 2rem;
+        &__text {
+            width: 100%;
+            position: relative;
+        }
+        &__img {
+            
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            gap: 1rem;
+            img {
+                width: 28rem;
+                margin-bottom: 0px;
+                max-width: 280px;
+            }
+            h4 {
+                font-family: 'maven pro';
+                font-size: $text-medium;
+                color: $black;
+            }
+            p {
+                font-family: 'spectral' ;
+                font-size: $text-small;
+                color: $grey;
+                
+            }
+        }
+        }    
+    .pacienteSectionThree {
+        .btnContacto{
+            border: none;
+            border-radius: 50px;
+            background-color: $secondary;
+            padding: 2rem;
+            transition: 400ms ease;
+            font-family: 'maven pro';
+            font-size: $text-small;
+            color: $white;
+        }
+        .btnContacto:hover {
+            border: none;
+            border-radius: 10px;
+            background-color: $primary;
+        }
+    }
+}
+/* RESPONSIVE TABLET */
+@media screen and (max-width: 768px) {
+    #pacienteMain {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        gap: 1rem;
+        position: relative;
+            .pacienteSectionOne {
+                z-index: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 6%;
+                width: 100%;
+                height: 55vh;
+                flex-wrap: wrap;
+                &__text {
+                    width: 80%;
+                }
+                &__img {
+                    width: 65%;
+                }
+            }
+            .decoBg-4 {
+                display: none;
+            }
+            .pacienteSectionTwo {
+                &__img {
+                display: grid;
+                grid-template-columns: 50% 50%;
+                gap: 1rem;
+                justify-content: space-around;
+                align-items: start;
+                justify-items: center;
+            }
+        }
+    }
+    
 }
