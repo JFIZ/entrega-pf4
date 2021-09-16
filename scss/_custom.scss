@@ -99,3 +99,34 @@
         top: 1400px;
     }
 }
+
+/* RESPONSIVE SMARTPHONE */
+@media screen and (max-width: 375px){
+.textStyles {
+    font-family: 'spectral';
+    font-size: 1.2em;
+    width: 300px;
+    position: absolute;
+    left: -56px;
+}
+.titleOfText {
+    margin: -29rem;
+    font-size: 2rem;
+    top: 328px;
+}
+.bgTitles {
+    font-family: 'Prata';
+    font-size: 4em;
+    text-transform: uppercase;
+    color: #E4E4E4;
+    z-index: 1;
+    position: absolute;
+    top: 15px;
+    left: -85px;
+}
+.decoText {
+    position: absolute;
+    left: -80px;
+    top: 69px;
+}
+}

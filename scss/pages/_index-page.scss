@@ -108,6 +108,12 @@
             }
         }
     }
+/* BOTON PRODUCTOS */
+    .indexSectionThree {
+        &__bottom {
+            display: none;
+        }
+    }    
 /* SECCION CUATRO (PRENSA) */
     .indexSectionFour {
         height: 100vh;
@@ -212,76 +218,69 @@
 } 
 
 /* RESPONSIVE SMARTPHONE */
-@media only screen and (max-width: 360px){
+@media only screen and (max-width: 375px){
     /* SECCIÓN UNO (INTRO) */  
 #indexMain { 
     margin: auto;
-    max-width: 360px;
+    max-width: 375px !important;
+    overflow: hidden;
     .indexSectionOne {  
-        @include flex(column, center, center);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        padding: 0;
         &__texto {
             top: 8rem;
             h2 {
-                font-size: 5.8rem;
+                font-size: 3.1rem;
+                padding: 0;
             }
             h1 {
-                font-size: 2em;
+                font-size: 1.8em;
+            }
+            ul li img{
+                max-width: 7rem;
             }
         }
         &__img {
             img {
-                right: -150px;
-                bottom: 200px;
-                width: 500px;
+                width: 320px;
             }
         }
     }
     /* SECCIÓN DOS (CRANEOPLASTIA) */
     .indexSectionTwo {
-        @include flex(column, center, center);
+        @include flex(column, space-between, center);
         height: 100vh;
+        margin-top: 0;
             &__img {
-               img {
-                   align-content: center;
-                   width: 400px;
-               }
+                img {
+                    left: -85px;
+                    position: absolute;
+                    bottom: -40px;
+                }
             }
     }
-    .carouselCustom {
-        display: none;
-        margin: 3rem auto;
-    }
+
     /* SECCIÓN TRES (PRODUCTOS) */
     .indexSectionThree {
-        display: none;
-        height: 60vh;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        position: relative;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: space-around;
-        gap: 15rem;
-        &__text {
-            position: relative;
-            width: 50%;
-        }
+        display: none; 
     }
     /* SECCION CUATRO (PRENSA) */
     .indexSectionFour {
-        height: 100vh;
+        height: 300vh;
         margin-top: 10%;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        gap: 10rem  ;
+        padding: 5rem;
+        gap: 0;
         position: relative;
-        @include flex(column, space-around, none);
-        &__text {
-            position: relative;
-        }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
     }
 /* CARD BOOSTRAP */
     .card-group { 
