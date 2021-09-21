@@ -5,6 +5,7 @@
     padding: 2rem;
     gap: 1rem;
     position: relative;
+    /* SECCION UNO */
     .pacienteSectionOne {
         z-index: 1;
         @include flex(row, space-between, flex-start);
@@ -30,6 +31,7 @@
             
         }
     }
+    /* SECCION DOS */
     .pacienteSectionTwo {
         @include flex(column, space-around, center);
         height: 100vh;
@@ -62,7 +64,17 @@
             }
         }
         }    
+    /* SECCION TRES */
     .pacienteSectionThree {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .pregunta {
+            font-family: 'maven pro';
+            font-size: $text-large;
+            font-weight: 100;
+            color: $black;
+        }
         .btnContacto{
             border: none;
             border-radius: 50px;
@@ -72,11 +84,12 @@
             font-family: 'maven pro';
             font-size: $text-small;
             color: $white;
+            box-shadow: 2px 9px 28px -6px rgba(0, 0, 0, 0.31);
         }
         .btnContacto:hover {
             border: none;
-            border-radius: 10px;
             background-color: $primary;
+            cursor: pointer;
         }
     }
 }
@@ -116,11 +129,82 @@
                 display: grid;
                 grid-template-columns: 50% 50%;
                 gap: 1rem;
-                justify-content: space-around;
-                align-items: start;
-                justify-items: center;
+                justify-content: space-between;
+                justify-items: start;
+                margin-left: 50px;
             }
         }
     }
     
+}
+
+/* RESPONSIVE SMARTPHONE */
+@media only screen and (max-width: 414px){
+    /* SECCIÓN UNO (INTRO) */  
+#pacienteMain { 
+    margin: auto;
+    max-width: 375px !important;
+    overflow: hidden;
+        /* SECCION UNO */
+        .pacienteSectionOne {
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: -4%;
+            height: 100vh;
+            gap: 17rem;
+            &__text {
+                width: 48%;
+            }
+            &__img {
+                width: 100%;
+                z-index: 3;
+                img {
+                    width: 33rem;
+                }
+            }
+        }
+        /* SECCION DOS */
+        .pacienteSectionTwo {
+            @include flex(column, space-between, center);
+            height: 250vh;
+            width: 100%;
+            &__text {
+                width: 29%;
+                position: relative;
+            }
+            &__img {
+                
+                display: grid;
+                grid-template-columns: 100%;
+                gap: 2rem;
+                img {
+                    width: 28rem;
+                    margin-bottom: 0px;
+                    max-width: 280px;
+                }
+                h4 {
+                    font-family: 'maven pro';
+                    font-size: $text-medium;
+                    color: $black;
+                }
+                p {
+                    font-family: 'spectral' ;
+                    font-size: $text-small;
+                    color: $grey;
+                    
+                }
+            }
+            }    
+        /* SECCION TRES */
+        .pacienteSectionThree {
+            gap: 2rem;
+            padding: 4rem;
+            .pregunta {
+                font-size: $text-medium;
+            }
+        }
+} 
 }

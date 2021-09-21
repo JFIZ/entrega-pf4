@@ -161,9 +161,11 @@
     /* SECCIÓN UNO (INTRO) */  
 #indexMain { 
     margin: auto;
+    max-width: 768px !important;
     .indexSectionOne {  
-        @include flex(column, center, center);
+        @include flex(column, center, center);  
         height: 70vh;
+        overflow: hidden;
         &__texto {
             top: 8rem;
             h2 {
@@ -218,7 +220,7 @@
 } 
 
 /* RESPONSIVE SMARTPHONE */
-@media only screen and (max-width: 375px){
+@media only screen and (max-width: 414px){
     /* SECCIÓN UNO (INTRO) */  
 #indexMain { 
     margin: auto;
@@ -282,31 +284,31 @@
         align-items: center;
         justify-content: space-evenly;
     }
-/* CARD BOOSTRAP */
-    .card-group { 
-        align-self: center;
-        gap: 3rem;
-        .card {
-            max-width: 290px;
-            height: 360px;
-            border: none;
-            box-shadow: 0px 3px 12px 0px rgba(235, 235, 235, 1);
+    /* CARD BOOSTRAP */
+        .card-group { 
+            align-self: center;
+            gap: 3rem;
+            .card {
+                max-width: 290px;
+                height: 360px;
+                border: none;
+                box-shadow: 0px 3px 12px 0px rgba(235, 235, 235, 1);
+            }
+            .card-title {
+                color: $primary;
+                font-family: 'maven pro';
+                font-size: 1.6em;
+                transition: 400ms ease;
+            }   
+            .card-title:hover {
+                color: $secondary;
+                
+            }
+            .card-text {
+                font-family: 'spectral';
+                font-size: 1.2em;
+                padding: 1rem;
+            }
         }
-        .card-title {
-            color: $primary;
-            font-family: 'maven pro';
-            font-size: 1.6em;
-            transition: 400ms ease;
-        }   
-        .card-title:hover {
-            color: $secondary;
-            
-        }
-        .card-text {
-            font-family: 'spectral';
-            font-size: 1.2em;
-            padding: 1rem;
-        }
-    }
 }
 } 

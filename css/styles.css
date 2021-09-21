@@ -68,7 +68,13 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center; } }
+    align-items: center;
+    background-color: #715E95; }
+  .ulCustom li a {
+    font-family: "maven pro";
+    font-size: 2.8rem;
+    color: #8CB858 !important;
+    transition: 400ms ease; } }
 
 footer {
   display: flex;
@@ -505,6 +511,7 @@ footer {
   /* SECCIÓN UNO (INTRO) */
   #indexMain {
     margin: auto;
+    max-width: 768px !important;
     /* SECCIÓN DOS (CRANEOPLASTIA) */
     /* SECCIÓN TRES (PRODUCTOS) */
     /* SECCION CUATRO (PRENSA) */ }
@@ -513,7 +520,8 @@ footer {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 70vh; }
+      height: 70vh;
+      overflow: hidden; }
       #indexMain .indexSectionOne__texto {
         top: 8rem; }
         #indexMain .indexSectionOne__texto h2 {
@@ -551,7 +559,7 @@ footer {
       height: 60vh; } }
 
 /* RESPONSIVE SMARTPHONE */
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 414px) {
   /* SECCIÓN UNO (INTRO) */
   #indexMain {
     margin: auto;
@@ -633,7 +641,10 @@ footer {
   align-items: center;
   padding: 2rem;
   gap: 1rem;
-  position: relative; }
+  position: relative;
+  /* SECCION UNO */
+  /* SECCION DOS */
+  /* SECCION TRES */ }
   #pacienteMain .pacienteSectionOne {
     z-index: 1;
     display: flex;
@@ -683,19 +694,29 @@ footer {
         font-family: 'spectral';
         font-size: 1.6em;
         color: #6C6C6C; }
-  #pacienteMain .pacienteSectionThree .btnContacto {
-    border: none;
-    border-radius: 50px;
-    background-color: #715E95;
-    padding: 2rem;
-    transition: 400ms ease;
-    font-family: 'maven pro';
-    font-size: 1.6em;
-    color: #E4E4E4; }
-  #pacienteMain .pacienteSectionThree .btnContacto:hover {
-    border: none;
-    border-radius: 10px;
-    background-color: #8CB858; }
+  #pacienteMain .pacienteSectionThree {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #pacienteMain .pacienteSectionThree .pregunta {
+      font-family: 'maven pro';
+      font-size: 4em;
+      font-weight: 100;
+      color: #2B2B2B; }
+    #pacienteMain .pacienteSectionThree .btnContacto {
+      border: none;
+      border-radius: 50px;
+      background-color: #715E95;
+      padding: 2rem;
+      transition: 400ms ease;
+      font-family: 'maven pro';
+      font-size: 1.6em;
+      color: #E4E4E4;
+      box-shadow: 2px 9px 28px -6px rgba(0, 0, 0, 0.31); }
+    #pacienteMain .pacienteSectionThree .btnContacto:hover {
+      border: none;
+      background-color: #8CB858;
+      cursor: pointer; }
 
 /* RESPONSIVE TABLET */
 @media screen and (max-width: 768px) {
@@ -728,9 +749,67 @@ footer {
       display: grid;
       grid-template-columns: 50% 50%;
       gap: 1rem;
+      justify-content: space-between;
+      justify-items: start;
+      margin-left: 50px; } }
+
+/* RESPONSIVE SMARTPHONE */
+@media only screen and (max-width: 414px) {
+  /* SECCIÓN UNO (INTRO) */
+  #pacienteMain {
+    margin: auto;
+    max-width: 375px !important;
+    overflow: hidden;
+    /* SECCION UNO */
+    /* SECCION DOS */
+    /* SECCION TRES */ }
+    #pacienteMain .pacienteSectionOne {
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
       justify-content: space-around;
-      align-items: start;
-      justify-items: center; } }
+      align-items: center;
+      margin-top: -4%;
+      height: 100vh;
+      gap: 17rem; }
+      #pacienteMain .pacienteSectionOne__text {
+        width: 48%; }
+      #pacienteMain .pacienteSectionOne__img {
+        width: 100%;
+        z-index: 3; }
+        #pacienteMain .pacienteSectionOne__img img {
+          width: 33rem; }
+    #pacienteMain .pacienteSectionTwo {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 250vh;
+      width: 100%; }
+      #pacienteMain .pacienteSectionTwo__text {
+        width: 29%;
+        position: relative; }
+      #pacienteMain .pacienteSectionTwo__img {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 2rem; }
+        #pacienteMain .pacienteSectionTwo__img img {
+          width: 28rem;
+          margin-bottom: 0px;
+          max-width: 280px; }
+        #pacienteMain .pacienteSectionTwo__img h4 {
+          font-family: 'maven pro';
+          font-size: 1.8em;
+          color: #2B2B2B; }
+        #pacienteMain .pacienteSectionTwo__img p {
+          font-family: 'spectral';
+          font-size: 1.6em;
+          color: #6C6C6C; }
+    #pacienteMain .pacienteSectionThree {
+      gap: 2rem;
+      padding: 4rem; }
+      #pacienteMain .pacienteSectionThree .pregunta {
+        font-size: 1.8em; } }
 
 .bodyNotFound {
   background: none !important;
