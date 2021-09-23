@@ -642,9 +642,9 @@ footer {
   padding: 2rem;
   gap: 1rem;
   position: relative;
-  /* SECCION UNO */
-  /* SECCION DOS */
-  /* SECCION TRES */ }
+  /* SECCION UNO (intro) */
+  /* SECCION DOS (Procesos) */
+  /* SECCION TRES (Contactenos) */ }
   #pacienteMain .pacienteSectionOne {
     z-index: 1;
     display: flex;
@@ -652,8 +652,8 @@ footer {
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 15%;
+    margin-bottom: 10%;
     width: 100%;
-    height: 80vh;
     gap: 7rem; }
     #pacienteMain .pacienteSectionOne .bgHands {
       opacity: 0.3;
@@ -674,6 +674,7 @@ footer {
     align-items: center;
     height: 100vh;
     width: 100%;
+    margin-bottom: 10%;
     gap: 2rem; }
     #pacienteMain .pacienteSectionTwo__text {
       width: 100%;
@@ -697,17 +698,19 @@ footer {
   #pacienteMain .pacienteSectionThree {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    margin-bottom: 10%; }
     #pacienteMain .pacienteSectionThree .pregunta {
       font-family: 'maven pro';
       font-size: 4em;
       font-weight: 100;
       color: #2B2B2B; }
     #pacienteMain .pacienteSectionThree .btnContacto {
+      margin: 2rem;
       border: none;
       border-radius: 50px;
       background-color: #715E95;
-      padding: 2rem;
+      padding: 1rem;
       transition: 400ms ease;
       font-family: 'maven pro';
       font-size: 1.6em;
@@ -810,6 +813,155 @@ footer {
       padding: 4rem; }
       #pacienteMain .pacienteSectionThree .pregunta {
         font-size: 1.8em; } }
+
+#clinicoMain {
+  max-width: 1220px;
+  margin: auto;
+  /* SECCION UNO (PRODUCTOS) */
+  /* CAROUSEL BOOSTRAP */
+  /* SECCION DOS (PROCESOS) */
+  /* SECCION TRES (PROTOLAB) */ }
+  #clinicoMain .clinicoSectionOne {
+    height: 100vh;
+    padding-top: 7%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 15rem;
+    align-content: center; }
+    #clinicoMain .clinicoSectionOne__text {
+      position: relative;
+      width: 50%; }
+  #clinicoMain .carouselCustom {
+    width: 700px;
+    height: 420px;
+    margin: auto;
+    background-color: #E4E4E4; }
+    #clinicoMain .carouselCustom__clip div img {
+      clip-path: polygon(0 0, 33% 0, 61% 100%, 0 100%, 0% 50%);
+      width: 700px;
+      height: 420px; }
+    #clinicoMain .carouselCustom__clip__text {
+      display: flex; }
+    #clinicoMain .carouselCustom__clip .carousel-item h3 {
+      color: #2B2B2B;
+      font-family: 'maven pro'; }
+    #clinicoMain .carouselCustom__clip .carousel-item p {
+      color: #2B2B2B;
+      font-family: 'spectral';
+      font-size: 1.6em; }
+    #clinicoMain .carouselCustom__clip .carousel-item .d-md-inline {
+      text-align: right;
+      padding: 1rem;
+      gap: 1rem;
+      height: 400px;
+      margin-right: -90px;
+      margin-left: 250px; }
+  #clinicoMain .clinicoSectionTwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    gap: 2rem; }
+    #clinicoMain .clinicoSectionTwo__text {
+      width: 100%;
+      position: relative; }
+    #clinicoMain .clinicoSectionTwo__img {
+      display: grid;
+      grid-template-columns: 25% 25% 25% 25%;
+      gap: 1rem;
+      padding: 2rem; }
+      #clinicoMain .clinicoSectionTwo__img img {
+        width: 28rem;
+        margin-bottom: 0px;
+        max-width: 280px; }
+      #clinicoMain .clinicoSectionTwo__img h4 {
+        font-family: 'maven pro';
+        font-size: 1.8em;
+        color: #2B2B2B; }
+      #clinicoMain .clinicoSectionTwo__img p {
+        font-family: 'spectral';
+        font-size: 1.6em;
+        color: #6C6C6C; }
+  #clinicoMain .clinicoSectionThree {
+    display: flex;
+    flex-direction: rox;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    position: relative; }
+    #clinicoMain .clinicoSectionThree__img {
+      width: 30%; }
+      #clinicoMain .clinicoSectionThree__img .imgPlan {
+        height: 400px;
+        clip-path: circle(60% at 1% 50%); }
+    #clinicoMain .clinicoSectionThree__text {
+      width: 70%;
+      position: relative; }
+      #clinicoMain .clinicoSectionThree__text h2 {
+        font-family: 'maven pro';
+        font-size: 4em;
+        color: #2B2B2B;
+        font-weight: 100; }
+      #clinicoMain .clinicoSectionThree__text img {
+        padding: 1rem; }
+      #clinicoMain .clinicoSectionThree__text p {
+        font-family: 'spectral';
+        font-size: 1.6em;
+        color: #6C6C6C;
+        padding: 1rem; }
+      #clinicoMain .clinicoSectionThree__text .btnContacto {
+        position: absolute;
+        left: 40%;
+        border: none;
+        border-radius: 50px;
+        background-color: #715E95;
+        padding: 1rem;
+        transition: 400ms ease;
+        font-family: 'maven pro';
+        font-size: 1.6em;
+        color: #E4E4E4;
+        box-shadow: 2px 9px 28px -6px rgba(0, 0, 0, 0.31); }
+      #clinicoMain .clinicoSectionThree__text .btnContacto:hover {
+        border: none;
+        background-color: #8CB858;
+        cursor: pointer; }
+
+#idiomsMain {
+  height: 70vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  #idiomsMain h2 {
+    font-family: 'maven pro';
+    font-size: 1.8em;
+    text-align: center;
+    color: #E4E4E4;
+    z-index: 2; }
+  #idiomsMain img {
+    z-index: 2;
+    height: 20rem; }
+
+#idiomsMain::before {
+  content: "";
+  background-image: url(../../images/bg-idioms.jpg);
+  background-size: cover;
+  background-repeat: none;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.80; }
 
 .bodyNotFound {
   background: none !important;

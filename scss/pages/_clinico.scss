@@ -1,0 +1,145 @@
+#clinicoMain {
+    max-width: 1220px;
+    margin: auto;
+/* SECCION UNO (PRODUCTOS) */
+.clinicoSectionOne {
+        height: 100vh;
+        padding-top: 7%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        gap: 15rem;
+        align-content: center;
+        &__text {
+            position: relative;
+            width: 50%;
+        }
+}
+/* CAROUSEL BOOSTRAP */
+.carouselCustom {
+    width: 700px;
+    height: 420px;
+    margin: auto;
+    background-color: $white;
+    &__clip {
+        div {
+            img {
+                clip-path: polygon(0 0, 33% 0, 61% 100%, 0 100%, 0% 50%);
+                width: 700px;
+                height: 420px;
+            }
+        }
+    &__text {
+        display: flex;
+
+    }    
+        .carousel-item {
+            h3 {
+                color: $black;
+                font-family: 'maven pro';
+            }
+            p { 
+                color: $black;
+                font-family: 'spectral';
+                font-size: 1.6em;
+            }                
+            .d-md-inline {
+                text-align: right;
+                padding: 1rem;
+                gap: 1rem;
+                height: 400px;
+                margin-right: -90px;
+                margin-left: 250px;
+            }
+        }
+    }
+}
+/* SECCION DOS (PROCESOS) */
+.clinicoSectionTwo {
+    @include flex(column, space-around, center);
+        height: 100vh;
+        width: 100%;
+        gap: 2rem;
+        &__text {
+            width: 100%;
+            position: relative;
+        }
+        &__img {
+            
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            gap: 1rem;
+            padding: 2rem;
+            img {
+                width: 28rem;
+                margin-bottom: 0px;
+                max-width: 280px;
+            }
+            h4 {
+                font-family: 'maven pro';
+                font-size: $text-medium;
+                color: $black;
+            }
+            p {
+                font-family: 'spectral' ;
+                font-size: $text-small;
+                color: $grey;
+                
+            }
+        }
+}
+/* SECCION TRES (PROTOLAB) */
+.clinicoSectionThree {
+    @include flex(rox, space-between, center);
+    padding: 2rem;
+    position: relative;
+    &__img {
+        width: 30%;
+        .imgPlan {
+            height: 400px;
+            clip-path: circle(60.0% at 1% 50%);
+        }
+    }
+    &__text {
+        width: 70%;
+        position: relative;
+        h2 {
+            font-family: 'maven pro';
+            font-size: $text-large;
+            color: $black;
+            font-weight: 100;
+        }
+        img {
+            padding: 1rem;
+        }
+        p {
+            font-family: 'spectral';
+            font-size: $text-small;
+            color: $grey;
+            padding: 1rem;
+        }
+        .btnContacto{
+            position: absolute;
+            left: 40%;
+            border: none;
+            border-radius: 50px;
+            background-color: $secondary;
+            padding: 1rem;
+            transition: 400ms ease;
+            font-family: 'maven pro';
+            font-size: $text-small;
+            color: $white;
+            box-shadow: 2px 9px 28px -6px rgba(0, 0, 0, 0.31);
+        }
+        .btnContacto:hover {
+            border: none;
+            background-color: $primary;
+            cursor: pointer;
+        }
+    }
+}
+}

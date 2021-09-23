@@ -1,0 +1,31 @@
+#idiomsMain {
+    height: 70vh;
+    width: 100%;
+    position: relative;
+    @include flex(column, center, center);
+    h2 {
+        font-family: 'maven pro';
+        font-size: $text-medium;
+        text-align: center;
+        color: $white;
+        z-index: 2;
+    }
+    img {
+        z-index: 2;
+        height: 20rem;
+    }
+}
+
+#idiomsMain::before {
+    content: "";
+    background-image: url(../../images/bg-idioms.jpg);
+    background-size: cover;
+    background-repeat: none;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.80;
+}
+
