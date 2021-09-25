@@ -69,7 +69,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: #715E95; }
+    background-color: #6C6C6C; }
   .ulCustom li a {
     font-family: "maven pro";
     font-size: 2.8rem;
@@ -818,6 +818,7 @@ footer {
   max-width: 1220px;
   margin: auto;
   /* SECCION UNO (PRODUCTOS) */
+  /* BOTON HACIA PRODUCTOS (SMARTPHONE) */
   /* CAROUSEL BOOSTRAP */
   /* SECCION DOS (PROCESOS) */
   /* SECCION TRES (PROTOLAB) */ }
@@ -836,6 +837,8 @@ footer {
     #clinicoMain .clinicoSectionOne__text {
       position: relative;
       width: 50%; }
+  #clinicoMain .smartProductos {
+    display: none; }
   #clinicoMain .carouselCustom {
     width: 700px;
     height: 420px;
@@ -932,6 +935,476 @@ footer {
         border: none;
         background-color: #8CB858;
         cursor: pointer; }
+
+/* =================================================================== */
+/* RESPONSIVE TABLET */
+@media only screen and (max-width: 768px) {
+  #clinicoMain {
+    max-width: 760px;
+    margin: auto;
+    overflow: hidden;
+    /* SECCION UNO (PRODUCTOS) */
+    /* SECCION DOS (PROCESOS) */
+    /* SECCION TRES (PROTOLAB) */ }
+    #clinicoMain .clinicoSectionOne {
+      padding-top: 0;
+      gap: 1rem; }
+    #clinicoMain .carouselCustom {
+      width: 700px;
+      height: 420px;
+      margin: 0px auto; }
+    #clinicoMain .clinicoSectionTwo {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 100vh;
+      width: 100%;
+      gap: 2rem;
+      padding: 2rem; }
+      #clinicoMain .clinicoSectionTwo__img {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 1rem;
+        padding: 1rem; }
+    #clinicoMain .clinicoSectionThree {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      padding: 2rem;
+      position: relative;
+      height: 100vh; }
+      #clinicoMain .clinicoSectionThree__img {
+        width: 80%;
+        margin: 2rem; }
+        #clinicoMain .clinicoSectionThree__img .imgPlan {
+          height: 400px;
+          clip-path: circle(39% at 50% 50%); }
+      #clinicoMain .clinicoSectionThree__text {
+        width: 70%;
+        position: relative; }
+        #clinicoMain .clinicoSectionThree__text h2 {
+          font-family: 'maven pro';
+          font-size: 4em;
+          color: #2B2B2B;
+          font-weight: 100; }
+        #clinicoMain .clinicoSectionThree__text img {
+          padding: 1rem; }
+        #clinicoMain .clinicoSectionThree__text p {
+          font-family: 'spectral';
+          font-size: 1.6em;
+          color: #6C6C6C;
+          padding: 1rem; }
+        #clinicoMain .clinicoSectionThree__text .btnContacto {
+          position: absolute;
+          left: 40%;
+          border: none;
+          border-radius: 50px;
+          background-color: #715E95;
+          padding: 1rem;
+          transition: 400ms ease;
+          font-family: 'maven pro';
+          font-size: 1.6em;
+          color: #E4E4E4;
+          box-shadow: 2px 9px 28px -6px rgba(0, 0, 0, 0.31); }
+        #clinicoMain .clinicoSectionThree__text .btnContacto:hover {
+          border: none;
+          background-color: #8CB858;
+          cursor: pointer; } }
+
+/* RESPONSIVE SMARTPHONE */
+@media only screen and (max-width: 414px) {
+  #clinicoMain {
+    max-width: 360px;
+    margin: auto;
+    overflow: hidden;
+    /* SECCION UNO (PRODUCTOS) */
+    /* SECCION DOS (PROCESOS) */
+    /* SECCION TRES (PROTOLAB) */ }
+    #clinicoMain .clinicoSectionOne {
+      padding-top: 40rem;
+      gap: 10rem;
+      z-index: 4; }
+      #clinicoMain .clinicoSectionOne__text {
+        position: relative;
+        width: 50%;
+        left: 80px; }
+    #clinicoMain .carouselCustom {
+      display: none; }
+    #clinicoMain .smartProductos {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      z-index: 2; }
+      #clinicoMain .smartProductos__img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem; }
+        #clinicoMain .smartProductos__img div {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 1rem; }
+        #clinicoMain .smartProductos__img div img {
+          width: 80%; }
+        #clinicoMain .smartProductos__img div h2 {
+          font-family: 'maven pro';
+          font-size: 4em;
+          color: #2B2B2B;
+          font-weight: 100; }
+      #clinicoMain .smartProductos__item {
+        margin: 2rem 0px; }
+        #clinicoMain .smartProductos__item .btnContacto {
+          margin: 2rem;
+          border: none;
+          border-radius: 50px;
+          background-color: #715E95;
+          padding: 2rem;
+          transition: 400ms ease;
+          font-family: 'maven pro';
+          font-size: 1.6em;
+          color: #E4E4E4;
+          box-shadow: 2px 9px 28px -6px rgba(0, 0, 0, 0.31); }
+        #clinicoMain .smartProductos__item .btnContacto:hover {
+          border: none;
+          background-color: #8CB858;
+          cursor: pointer; }
+    #clinicoMain .clinicoSectionTwo {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 100vh;
+      width: 100%;
+      margin: 80rem 0px;
+      gap: 2rem;
+      padding: 2rem; }
+      #clinicoMain .clinicoSectionTwo__text {
+        width: 40%;
+        position: relative;
+        margin-bottom: 10rem; }
+      #clinicoMain .clinicoSectionTwo__img {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 1rem;
+        padding: 1rem; }
+      #clinicoMain .clinicoSectionTwo span {
+        display: none; }
+    #clinicoMain .clinicoSectionThree {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      padding: 2rem;
+      position: relative;
+      height: 130vh;
+      margin-bottom: 24rem; }
+      #clinicoMain .clinicoSectionThree__img {
+        width: 163%;
+        margin: 2rem; }
+        #clinicoMain .clinicoSectionThree__img .imgPlan {
+          height: 350px;
+          clip-path: circle(39% at 50% 50%); }
+      #clinicoMain .clinicoSectionThree__text {
+        width: 70%;
+        position: relative; }
+        #clinicoMain .clinicoSectionThree__text h2 {
+          font-family: 'maven pro';
+          font-size: 4em;
+          color: #2B2B2B;
+          font-weight: 100; }
+        #clinicoMain .clinicoSectionThree__text img {
+          padding: 1rem; }
+        #clinicoMain .clinicoSectionThree__text p {
+          font-family: 'spectral';
+          font-size: 1.6em;
+          color: #6C6C6C;
+          padding: 1rem; }
+        #clinicoMain .clinicoSectionThree__text .btnContacto {
+          position: absolute;
+          left: 40%;
+          border: none;
+          border-radius: 50px;
+          background-color: #715E95;
+          padding: 1rem;
+          transition: 400ms ease;
+          font-family: 'maven pro';
+          font-size: 1.6em;
+          color: #E4E4E4;
+          box-shadow: 2px 9px 28px -6px rgba(0, 0, 0, 0.31); }
+        #clinicoMain .clinicoSectionThree__text .btnContacto:hover {
+          border: none;
+          background-color: #8CB858;
+          cursor: pointer; } }
+
+#productosMain {
+  max-width: 1220px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* SECCION UNO (TITULO) */
+  /* SECCION DOS (CARDS PRODUCTOS) */
+  /* SECCION TRES (CONTACTO) */ }
+  #productosMain .productosTitle {
+    margin: 6rem 0px;
+    width: 100vw;
+    height: 30vh; }
+    #productosMain .productosTitle__text {
+      position: relative;
+      top: 50%;
+      margin-left: 10%; }
+  #productosMain .productosCards {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 4rem;
+    margin: 2rem; }
+    #productosMain .productosCards .card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      word-wrap: break-word;
+      background-color: #fff;
+      background-clip: border-box;
+      border: none;
+      border-radius: 0.50rem;
+      box-shadow: 6px 9px 8px -5px rgba(0, 0, 0, 0.1); }
+    #productosMain .productosCards .card-title {
+      font-family: 'maven-pro';
+      font-weight: 100;
+      font-size: 1.8em;
+      color: #2B2B2B; }
+    #productosMain .productosCards .card-text {
+      font-family: 'spectral';
+      font-size: 1.2em;
+      color: #6C6C6C; }
+    #productosMain .productosCards .imgCard {
+      max-width: 100%; }
+  #productosMain .productosContacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem; }
+    #productosMain .productosContacto .pregunta {
+      font-family: 'maven pro';
+      font-size: 4em;
+      font-weight: 100;
+      color: #2B2B2B; }
+    #productosMain .productosContacto .btnContacto {
+      margin: 2rem;
+      border: none;
+      border-radius: 50px;
+      background-color: #715E95;
+      padding: 1rem;
+      transition: 400ms ease;
+      font-family: 'maven pro';
+      font-size: 1.6em;
+      color: #E4E4E4;
+      box-shadow: 2px 9px 28px -6px rgba(0, 0, 0, 0.31); }
+    #productosMain .productosContacto .btnContacto:hover {
+      border: none;
+      background-color: #8CB858;
+      cursor: pointer; }
+
+/* =================================================================== */
+/* RESPONSIVE TABLET */
+@media only screen and (max-width: 768px) {
+  #productosMain {
+    max-width: 760px;
+    padding: 0px 1rem;
+    overflow: hidden;
+    /* SECCION UNO (TITULO) */
+    /* SECCION DOS (CARDS PRODUCTOS) */ }
+    #productosMain .productosTitle {
+      margin: 2rem 0px; }
+      #productosMain .productosTitle__text {
+        position: relative;
+        top: 35%;
+        margin-left: 10%; }
+    #productosMain .productosCards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      margin: 2rem; }
+      #productosMain .productosCards .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: none;
+        border-radius: 0.50rem;
+        box-shadow: 6px 9px 8px -5px rgba(0, 0, 0, 0.1); }
+      #productosMain .productosCards .card-title {
+        font-family: 'maven-pro';
+        font-weight: 100;
+        font-size: 1.8em;
+        color: #2B2B2B; }
+      #productosMain .productosCards .card-text {
+        font-family: 'spectral';
+        font-size: 1.2em;
+        color: #6C6C6C; }
+      #productosMain .productosCards .imgCard {
+        max-width: 100%; } }
+
+/* RESPONSIVE SMARTPHONE */
+@media only screen and (max-width: 414px) {
+  #productosMain {
+    max-width: 360px;
+    padding: 0px 1rem;
+    overflow: hidden;
+    /* SECCION UNO (TITULO) */
+    /* SECCION DOS (CARDS PRODUCTOS) */
+    /* SECCION TRES (CONTACTO) */ }
+    #productosMain .productosTitle {
+      margin: 2rem 0px; }
+      #productosMain .productosTitle__text {
+        position: relative;
+        top: 35%;
+        margin-left: 37%; }
+    #productosMain .productosCards {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 4rem;
+      margin: 2rem; }
+      #productosMain .productosCards .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: none;
+        border-radius: 0.50rem;
+        box-shadow: 6px 9px 8px -5px rgba(0, 0, 0, 0.1); }
+      #productosMain .productosCards .card-title {
+        font-family: 'maven-pro';
+        font-weight: 100;
+        font-size: 1.8em;
+        color: #2B2B2B; }
+      #productosMain .productosCards .card-text {
+        font-family: 'spectral';
+        font-size: 1.2em;
+        color: #6C6C6C; }
+      #productosMain .productosCards .imgCard {
+        max-width: 100%; }
+    #productosMain .productosContacto {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 2rem; }
+      #productosMain .productosContacto .pregunta {
+        text-align: center;
+        font-family: 'maven pro';
+        font-size: 4em;
+        font-weight: 100;
+        color: #2B2B2B; }
+      #productosMain .productosContacto .btnContacto {
+        margin: 2rem;
+        border: none;
+        border-radius: 50px;
+        background-color: #715E95;
+        padding: 1rem;
+        transition: 400ms ease;
+        font-family: 'maven pro';
+        font-size: 1.6em;
+        color: #E4E4E4;
+        box-shadow: 2px 9px 28px -6px rgba(0, 0, 0, 0.31); }
+      #productosMain .productosContacto .btnContacto:hover {
+        border: none;
+        background-color: #8CB858;
+        cursor: pointer; } }
+
+#contactoMain {
+  max-width: 1220px;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  #contactoMain .tituloContacto {
+    margin-top: 8rem; }
+    #contactoMain .tituloContacto h3 {
+      font-family: 'spectral';
+      color: #6C6C6C;
+      font-size: 4em;
+      font-weight: 100; }
+  #contactoMain .formularioContacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 51vh; }
+    #contactoMain .formularioContacto .form-label {
+      margin-bottom: .5rem;
+      font-family: 'Spectral';
+      font-size: medium; }
+    #contactoMain .formularioContacto .form-control {
+      display: block;
+      padding: 1rem 14rem;
+      font-size: 1.6em;
+      font-family: 'spectral';
+      font-weight: 100;
+      line-height: 1.5;
+      color: #715E95 !important;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: none;
+      box-shadow: 6px 9px 8px -5px rgba(0, 0, 0, 0.1);
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border-radius: .50rem; }
+    #contactoMain .formularioContacto .btnContacto {
+      margin: 1rem;
+      border: none;
+      border-radius: 50px;
+      background-color: #715E95;
+      padding: 0.8rem 2rem;
+      transition: 400ms ease;
+      font-family: 'maven pro';
+      font-size: 1.6em;
+      color: #E4E4E4;
+      box-shadow: 2px 9px 28px -6px rgba(0, 0, 0, 0.31); }
+    #contactoMain .formularioContacto .btnContacto:hover {
+      border: none;
+      background-color: #8CB858;
+      cursor: pointer; }
+
+/* =================================================================== */
+/* RESPONSIVE TABLET */
+@media only screen and (max-width: 768px) {
+  #contactoMain {
+    max-width: 768px;
+    margin: auto;
+    overflow: hidden; }
+    #contactoMain .tituloContacto {
+      margin-top: 8rem; }
+      #contactoMain .tituloContacto h3 {
+        font-family: 'spectral';
+        color: #6C6C6C;
+        font-size: 4em;
+        font-weight: 100; }
+    #contactoMain .formularioContacto {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 4rem 0px;
+      height: 55vh; } }
 
 #idiomsMain {
   height: 70vh;

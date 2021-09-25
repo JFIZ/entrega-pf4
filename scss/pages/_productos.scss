@@ -1,0 +1,217 @@
+#productosMain {
+    max-width: 1220px;
+    margin: auto;
+    @include flex(column, center, center);
+/* SECCION UNO (TITULO) */    
+    .productosTitle{
+        margin: 6rem 0px    ;
+        width: 100vw;
+        height: 30vh;
+        &__text {
+            position: relative;
+            top: 50%;
+            margin-left: 10%;
+        }
+    }
+/* SECCION DOS (CARDS PRODUCTOS) */
+    .productosCards {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 4rem;
+        margin: 2rem;
+        
+        .card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-color: #fff;
+            background-clip: border-box;
+            border: none;
+            border-radius: 0.50rem;
+            box-shadow: 6px 9px 8px -5px rgba(0, 0, 0, 0.10);
+        }
+
+        .card-title {
+            font-family: 'maven-pro';
+            font-weight: 100;
+            font-size: $text-medium;
+            color: $black;
+        }
+        .card-text {
+            font-family: 'spectral';
+            font-size: $text-xsmall;
+            color: $grey;
+        }
+        .imgCard {
+            max-width: 100%;
+        }
+    }
+/* SECCION TRES (CONTACTO) */
+    .productosContacto {
+        @include flex(column, center, center);
+        margin: 2rem;
+        .pregunta {
+            font-family: 'maven pro';
+            font-size: $text-large;
+            font-weight: 100;
+            color: $black;
+        }
+        .btnContacto{
+            margin: 2rem;
+            border: none;
+            border-radius: 50px;
+            background-color: $secondary;
+            padding: 1rem;
+            transition: 400ms ease;
+            font-family: 'maven pro';
+            font-size: $text-small;
+            color: $white;
+            box-shadow: 2px 9px 28px -6px rgba(0, 0, 0, 0.31);
+        }
+        .btnContacto:hover {
+            border: none;
+            background-color: $primary;
+            cursor: pointer;
+        }
+
+    }
+}
+/* =================================================================== */
+
+/* RESPONSIVE TABLET */
+@media only screen and (max-width: 768px){
+        #productosMain {
+            max-width: 760px;
+            padding: 0px 1rem;
+            overflow: hidden;
+        /* SECCION UNO (TITULO) */
+        .productosTitle {
+            margin: 2rem 0px;
+            &__text {
+                position: relative;
+                top: 35%;
+                margin-left: 10%;
+            }
+        }
+        /* SECCION DOS (CARDS PRODUCTOS) */
+        .productosCards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin: 2rem;
+            
+            .card {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                min-width: 0;
+                word-wrap: break-word;
+                background-color: #fff;
+                background-clip: border-box;
+                border: none;
+                border-radius: 0.50rem;
+                box-shadow: 6px 9px 8px -5px rgba(0, 0, 0, 0.10);
+            }
+
+            .card-title {
+                font-family: 'maven-pro';
+                font-weight: 100;
+                font-size: $text-medium;
+                color: $black;
+            }
+            .card-text {
+                font-family: 'spectral';
+                font-size: $text-xsmall;
+                color: $grey;
+            }
+            .imgCard {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+/* RESPONSIVE SMARTPHONE */
+@media only screen and (max-width: 414px){
+    #productosMain {
+        max-width: 360px;
+        padding: 0px 1rem;
+        overflow: hidden;
+    /* SECCION UNO (TITULO) */
+    .productosTitle {
+        margin: 2rem 0px;
+        &__text {
+            position: relative;
+            top: 35%;
+            margin-left: 37%;
+        }
+    }
+    /* SECCION DOS (CARDS PRODUCTOS) */
+    .productosCards {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 4rem;
+        margin: 2rem;
+        
+        .card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-color: #fff;
+            background-clip: border-box;
+            border: none;
+            border-radius: 0.50rem;
+            box-shadow: 6px 9px 8px -5px rgba(0, 0, 0, 0.10);
+        }
+
+        .card-title {
+            font-family: 'maven-pro';
+            font-weight: 100;
+            font-size: $text-medium;
+            color: $black;
+        }
+        .card-text {
+            font-family: 'spectral';
+            font-size: $text-xsmall;
+            color: $grey;
+        }
+        .imgCard {
+            max-width: 100%;
+        }
+    }
+    /* SECCION TRES (CONTACTO) */
+    .productosContacto {
+        @include flex(column, center, center);
+        margin: 2rem;
+        .pregunta {
+            text-align: center;
+            font-family: 'maven pro';
+            font-size: $text-large;
+            font-weight: 100;
+            color: $black;
+        }
+        .btnContacto{
+            margin: 2rem;
+            border: none;
+            border-radius: 50px;
+            background-color: $secondary;
+            padding: 1rem;
+            transition: 400ms ease;
+            font-family: 'maven pro';
+            font-size: $text-small;
+            color: $white;
+            box-shadow: 2px 9px 28px -6px rgba(0, 0, 0, 0.31);
+        }
+        .btnContacto:hover {
+            border: none;
+            background-color: $primary;
+            cursor: pointer;
+        }
+
+    }
+}
+} 

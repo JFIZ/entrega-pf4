@@ -56,7 +56,7 @@ header {
 @media screen and (max-width: 768px){
 .ulCustom {
     @include flex(column, space-between, center);
-    background-color: $secondary;
+    background-color: $grey;
     }
     .ulCustom li a {
         font-family: "maven pro";
